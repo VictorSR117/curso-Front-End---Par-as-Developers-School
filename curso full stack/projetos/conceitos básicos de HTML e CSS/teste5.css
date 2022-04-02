@@ -1,0 +1,21 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 50px;
+    font-size: 17;
+}
+.link {
+    color: aqua;
+    font-size: 30px;
+}
+.link:hover
+{
+color: palegreen;
+}
+.link:visited
+{
+    color: palevioletred;
+}

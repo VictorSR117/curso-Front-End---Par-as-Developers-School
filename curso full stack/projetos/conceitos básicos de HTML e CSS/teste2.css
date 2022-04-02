@@ -1,0 +1,20 @@
+body
+{
+    margin: 0px;
+}
+.example
+{
+    border: 1px solid #126aee;
+    padding: 10px;
+    background-color:aqua;
+    width: 500px;
+    height: 500px;
+}
+img
+{
+    width: inherit;/*recebe o tamanho do anterior como herança*/
+    max-width: 450px;
+    height: 500px;
+    max-height: 150px;/*limita o tamanho máximo do atributo*/
+    min-width: 80px;/*determina o tamanho mínimo do atributo*/
+}

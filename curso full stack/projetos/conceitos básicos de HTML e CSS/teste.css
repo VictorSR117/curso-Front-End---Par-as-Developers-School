@@ -1,0 +1,57 @@
+/*este é um exemplo de CSS externo*/
+
+h3
+{
+    color: rgb(15, 218, 184);
+}
+#skin
+{
+    color: rgb(255, 0, 170);
+}
+.text
+{
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(231, 173, 65);
+}
+#skin, .text/*coloca parametros em ambos os elementos*/
+{
+    font-weight: 200;
+}
+ol li /*coloca parametros nos elementos que estiverem dentro do outro*/
+{
+    color:aqua;
+}
+/*cores em CSS:
+color: red; normal
+color: rgb(255, 255, 255); RGB 
+color: 00ff15; hexadecimal
+*/
+h1
+{
+    background-color: aliceblue;
+}
+p
+{
+    border: 5px solid black;/*tamanho da borda, tipo e cor*/
+    border:5px dashed black;
+    border:5px double black;
+    border-bottom: 5px double blueviolet;
+    border-radius: 5px;
+}
+div
+{
+    background-color: rgb(148, 143, 216);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    /*para fazer circulos sempre deve ser colocada a metade do tamanho total do quadrado no bordeer-radius, como no exemplo acima*/
+    border: 3px solid darkgreen;
+}
+img
+{
+    border:5px solid red;
+    border-radius: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+}

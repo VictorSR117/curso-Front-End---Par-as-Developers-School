@@ -1,0 +1,363 @@
+aula 4 de introdução a HTML e CSS
+
+<h1> = heading = cabeçalho
+
+digitar simplesmente html te da a estrutura basica
+
+aula 10 de conhecimento básico de html e css
+
+jeitos de colocar CSS no código:
+CSS inline >>> na mesma linha
+CSS interno >>> em algum lugar reservado no própio documento
+CSS externo >>> em um outro documento criado somente para esse fim.
+
+padding: 10px; >>> espaçamento interno
+margin: 10px; >>> espaçamento externo
+
+algumas formas de usar o padding
+    
+    padding: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+    padding: 10px 20px; (os parametros mudam os parametros top-bottom e right-left respectivamente, usado quando os valores são iguais
+    tanto pra cima como pra baixo.
+    padding: 10px"^" 20px">" 10px"v" 20px"<"; (esse em especifico tem que ser em sentido horário,
+    a ordem dos parametros sempre é: top, right, bottom, left. O conteudo em aspas não deve ser colocado, 
+    ele é sómente uma representação ficticia que eu criei pra me orientar
+
+    essa mesma lógica do padding serve também para as margens
+    
+o comando inherit no CSS faz com que um elemento tenha por herança os atributos do elemento anterior. 
+exemplo:
+<div id = "caixa">
+<img src = "gato.pnj">
+</div>
+
+#caixa
+{
+width:500px
+height:500px
+}
+
+img
+{
+width:inherit
+}
+com isso a imagem recebe o tamanho da div, isso pode ser usado em diversos casos.
+
+também tem a tag max e min que determinam o tamanho minímo ou máximo de um elemento podendo ser em qualquer direção pra cima e pra baixo ou pros lados, ele recebe prioridade máxima e sempre sera cumprido.
+ex:
+max-width
+min-width
+
+o tamanho total do conteudo é o seu tamanho original + o padding + a borda 
+ex:
+
+width: 400px;
+height: 400px;
+border: 5px solid #000;
+padding: 10px;
+margin: 20px;
+
+400 do tamanho original + 10 de um lado do padding mais 10 do outro padding da 420 + 5 de um lado da borda + 5 de outro lado da borda da 430
+
+o comando a seguir aplica atributos a todos o elementos na tela.
+*
+{
+}
+
+a propriedade box-sizing muda o tamanho de algum elemento (geralmente a gente chama esses elementos de caixa)
+
+com essa propriedade podemos aplicar vários atributos, entre eles o content-box e o border-box
+content box: o conteudo tem o seu tamanho original e aumente conforme o tamanho de outras propriedades como margin e padding
+border-box: o conteudo mantem seu tamanho original independente do tamanho de margin ou padding adicionados a ele.
+ex:
+
+width: 400px;
+height: 400px;
+border: 5px solid #000;
+padding: 10px;
+margin: 20px;
+
+com content-box o conteudo passaria de 400px a ter 430 devido as propriedades.
+com o border-box o conteudo passaria de 400px para 370 pois seria descontado os valores das margins e padding.
+
+target="_blank" pode ser usado em links para abrir a tela clicada em uma nova aba.
+
+quando for criar um link, e quiser fazer o usuário ir para uma parte do site que fica na mesma tela,
+use em um link o ID do lugar da página que vc quer mostrar 
+é a mesma lógica de quando fazemos edições em CSS, se for uma ID é só colocar o # e o nome da ID (#ID) por exemplo
+
+os links em CSS podem ter seus valores alterados, da pra mudar cor, tamanho da fonte, cor de fundo
+entre outras coisas. Também tem a possibilidade de mudar os atributos dele em diferentes estágios, 
+como por exemplo o atributo hover que muda os aspecto do link quando um mouse é passado sobre ele
+pra usar é só colocar um . o nome do atributo que vai receber isso : e o atributo que vai receber 
+ex: .link:hover{} ai dentro das chaves colocar o que vai mudar tipo a cor, tamanho de letra tamanho de borda etc.
+lembrando  que esse hover aplica o que tiver dentro das chaves depois de aplicar os aspectos definidaos antes ou os de padrão
+então se você criar uma classe como link tendo 30 pixels de font-size  e uma cor vermelha e aí no hoover você coloca que ele vai ter uma cor verde
+ele vai continuar tendo 30 pixels no tamanho da fonte porque você determinou isso no elemento de link lá atrás, se você não determinou ele só vai deixar o tamanho normal
+por padrão mas geralmente aplica o que você colocou anteriormente
+Se tiver elemento repetido ele também repete,  ele primeiro aplica tudo o que você define
+como padrão e depois aplica as coisas que você colocou no roover  por exemplo e aí o que é repetido ele mantém
+e o que não tem ele pega do anterior
+
+<b></b> = negrito
+<strong></strong> = negrito e semantica de importancia (ajuda nos recursos audiovisuais)
+
+mesmo esquema do anterior
+<i></i>
+<en></en>
+
+<mark> = faz uma alteração tipo um marca texto
+</mark>
+
+<sup> = deixa um caractere menor e elevado
+</sup> 
+ex: 1º o o elevado é trabalho da tag sup
+
+<sub> = deixa um caractere menor e meio q em baixo de um número
+</sub>
+ex: 1₂ o 2 embaixo é trabalho da tag sub
+
+o comando CSS text-decoration serve para não só para links mas para todo e qualquer tipo de texto.
+
+o espaço é contado como caractere no CSS
+
+o comando text-shadow no CSS é responsável por
+colocar uma sombra no texto, ele possui 4 parámetros onde o 1º ajusta as sombras
+do texto de maneira horizontal (valores positivos
+para mover para a direita e negativos para mover para a esquerda)
+o 2º de maneira vertical(valores positivos para mover para baixo e valores negativos para mover para cima)
+e o 3º é responsável pela entonação, ou seja, o quão forte
+será o efeito de fumaça essa sombra,
+o 4º parametro define a cor da sombra.
+
+ex: text-shadow: 3px 3px 5px red;
+
+ul = lista não ordenada
+ol = lista ordenada
+li = linhas da lista
+
+da pra mudar o estilo dos marcadores nas listas sendo:
+<ul style="list-style-type:none"> para ul
+<ol type="A"> para ol
+na ol da pra começar a contagem a partir de um número pré-determinado se voê quiser
+usando o comando start="5"
+5 foi usado como exemplo
+
+o uso do thead e tbody são uteis para o navegador
+na criação de tabelas
+elas estruturam melho a tabela e deixam mais simpes de organizar outras tabelas
+
+sempre que precisar de entrada de dados do usuário, utilizar um formulário
+
+quando usar a tag input com o type radio o name deve ser igual em todos os parametros
+pois com nomes diferentes o navegador acredita que são coisas de grupos diferentes
+e com isso ele deixa marcar 2 opções sendo q isso não pose acontecer
+
+os tipos basicos de type para input são:
+text
+passoword
+checkbox
+radio
+textarea
+submit
+color
+e existem variações desses tipos, como por exemplo o type email
+
+e não pode esquecer de colocar a propriedade value.
+ela atribui um valor ao seu input
+
+a tag select serve para selecionar uma opção dentre várias, serve para criação de filtros por exemplo
+essa tag pode receber um atributo name e pode conter tags <option></opition> que tem os atributos:
+value = valor da opção, é o nome que vai aparecer na tela. É como se a opção q vai  aparecer na tela fosse uma variavel
+e o value é o nome dessa variavel(se não tiver um value aparece o que tiver dentro da tag)
+
+ex: <option value="">Recentes</option> aparece Recentes na tela
+    <option value="last">Recentes</option> aparece last na tela
+
+size = numero de opções que podem ser selecionadas
+
+multiple = permite que mais de uma opção seja selecionada 
+
+selected = faz com que a opção seja a primeira a aparecer na tela
+(por padrão é apresentada a primeira opçaõ na tela)
+ex:
+<option value="">Recentes</option> primeira opção a aparecer
+<option value="">velhos</option>
+<option value="">lancamento</option>
+
+<option value="">Recentes</option>
+<option value="" selected>Recentes</option> primeira opção a aparecer
+<option value="">Recentes</option>
+
+<option></option> primeira opção a aparecer na tela (usado pra não ter nenhuma de padrão)
+<option value="">Recentes</option>
+<option value="">Recentes</option>
+<option value="">Recentes</option>
+
+o textarea deve conter um name
+
+a tag button pode ser usada dentro e fora de formulários, (em um formulário ela tem o msm poder da tag input com o type submit)
+
+a tag label  pode ser usada de 2 maneiras
+
+1º
+<label for="name">nome completo:</label>
+<input type="text" id="name" name="name">
+2º
+<label>
+    <input type="text" name="text">
+</label>
+ela é usada com o mesmo intuito do botão de input, só que ela permite que o usuário possa utilizar o campo
+desejado clicando só nas especificações
+ex:
+
+<input type="text" id="name" name="name">
+sem o label o usuário tem que clicar exatamente na linha de texto
+
+<label for="name">nome completo:</label>
+<input type="text" id="name" name="name">
+com o label só de clicar em nome ja da pra escrever
+
+por padrão o campo text tem 20 caracteres de espaço
+
+e o label vem com o display inline por padrão, o que faz os elementos ficarem todos em linha
+usando o comando display block ele fica em blocos, deixando os conteudos um abaixo do outro
+
+a propriedade outline pode modificar ou desabilitar a barra azul ou de seleção que aparece quando clicamos em um campo de texto
+a propriedade resize pode alterar ou desabilitar a opção de ajustar o tamanho da textarea (por padrão é possivel alterar o tamanho do textarea)
+
+o flex box por padrão trabalha em linha, porém pode ser alterado através da propriedade flex-direction
+row = linha
+column = coluna
+row-reverse =  linha ao contrario(de trás pra frente) da direita pra esquerda
+column-reverse = mesma lógica do anterior só que na vertical
+
+ele tem a função de dixar as caixas da aplicação mais flexiveis e adaptaveis sendo alinhadas uma ao lado da outra
+
+flex:1; /*aplica as propriedades a todos que forem do grupo 1, dividindo o tamanho da tela e outros atributos entre eles*/
+
+flex:2;/*mesma lógica do 1*/
+
+se os dois tão no mesmo documento a pagina vai ficar dividida proporcionalmente entre ambos
+
+quando definimos um tamanho em flex box e esse tamanho excede o que temos disponivel 
+o CSS ajusta os itens de maneira que todos caibam de maneira proporcional
+ex:
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #DDDDDD;
+}
+.container div {
+    width: 300px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+como não tem espaço o suficiente na tela o flex box
+ajusta os itens deixando eles menores porém cabendo na tela
+
+flex-wrap: wrap = essa proriedade faz com que se não houver espaço o suficiente na para
+caber todos os itens na mesma linha os itens que não couberem vão para a linha de baixo
+por padrão ele vem como "nowrap"
+
+flex-flow:row wrap = esse parametro define o text direction e o text wrap na mesma linha
+
+o justfy-content e o align-itens ajustam o que esta dentro do elemento e não com os itens em especifico
+
+justfy-content = pode ajustar o conteudo nas linhas
+
+align-itens = pode ajustar o conteudo nas colunas
+
+flex-start = alinha o conteudo onde começa o flex (linha, coluna etc)
+flex-end = alinha o conteudo onde começa o flex (linha, coluna etc)
+space-arround = alinlha os itens deixando um espaçamento igual entre todos os elementos
+space-between = o primeiro e o ultimo item ficam nos cantos
+e os restante dos itens ficam espalhados pela tela
+
+por padrão o align-itens alinha os itens de maneira oposta ao justfy-content
+ex:
+.container {
+    display: flex;
+    justify-content: center;/*alinha o conteudo na horizontal*/
+    align-items: center;/*alinha o conteudo na vertical*/
+    background-color: #DDDDDD;
+    height: 500px;
+}
+o justify ta cuiando da horizontal e o align da vertical.
+ex2:
+.container {
+    display: flex;
+    flex-direction: colunm;
+    justify-content: center;/*alinha o conteudo na horizontal*/
+    background-color: #DDDDDD;
+    height: 500px;
+}
+o justify ta cuidando das colunas e o align(se for colocado)cuida das linhas
+percebe-se que eles se orientam de maneira oposta um do outro
+podendo ainhar os itens de varias direções
+
+sendo sempre o align-itens cuidando das colunas e
+o justfy content cuidando das linhas
+
+justfy-itens = alinha na direção que está sendo exibida seja linha ou coluna
+align-itens = alinha na direção oposta da exibição ou seja o contrário (quando a orientação está em linha
+ele alinha em coluna e quando a orientação está em coluna ele alinha em linha)
+
+o align-itens alinha os objetos na direção oposta da qual foram orientados (colunm = alinhados em linha
+(row = alinhados em coluna)
+ja o justfy-itens alinha os itens na direcção que foram criados (colunm = alinhados em coluna e row = alinhados em linha
+
+o align geralmente é usado para orientar colunas(orientação vertical)
+o justfy geralmente é usado para orientar linhas(orientação horizontal)
+
+é possivel mover um item separado dos demais usando o comando align-self. ele faz com que um elemento se separe entre os demais
+ficando em um lugar diferente, aceita os mesmos atributos do align e justfy
+
+também da pra mudar a ordem dos itens usando o atributo order.
+por padrão os itens vem com o valor 0, e é possivel por exemplo
+mandar um elemento para frente de todos os outros colocando order:1
+ou atras de todos com o order -1, pois são valores diferentes de zer
+se colocar order 2 esse elemento não só vai pra frente de todos como fica também na frente do 1
+pois 2 é maior que 1
+se 2 itens tem o mesmo valor
+tipo dois oreder 1
+fica na frente de acordo com a ordem que foram criados no html
+
+no HTML a tag <meta name="viewport" content="width=device-width, user-scalable=0">
+ajuda na responsividade do site.
+
+o name=viewport content="width=device-width = faz com que o site ocupe o tamanho da tela
+de acordo com o dispositivo que está rodando a aplicação.
+
+uma boa ideia pra demarcar o menu em que o usuário se encontra é mudar a cor do fundo do botão referente aquele menu,
+se ele estiver no home o botão home fica com uma cor diferente dos demais
+
+quando for usar uma imagem como fundo no CSS dependendo do caso tem que colocar ''
+ex:
+background-image: url(../images/logo.png);
+
+como a imagem nem o caminho até ela tem espaços em branco não tem a necessidade de colocar as aspas
+
+background-image: url('../images/wolf logo.png');
+ja nesse caso tem um espaço em branco então é preciso colocar dentro das aspas
+
+OBS: (por algum motivo desconhecido kkkk  quando a gente coloca a imagem com espaços em branco no nome
+e não poe as aspas mais coloca uma \ no lugar ela funciona 
+ex: background-image: url(../images/wolf\ logo.png); 
+tem espaço em branco não ta nas aspas mais como tem a \ funciona)
+
+mais colocar as aspas é um bom hábito
+
+é possivel adicionar mais de uma class no mesmo elemento,
+ex: 
+uma div com class normal = div class ="container"
+uma div com 2 class = div class ="container column"
+assim  a outra div vai pegar o conteudo de 2 classes
+

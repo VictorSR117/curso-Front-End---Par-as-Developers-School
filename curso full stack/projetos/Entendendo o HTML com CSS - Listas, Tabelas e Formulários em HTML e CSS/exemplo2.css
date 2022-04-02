@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+}
+p {
+    color: rgb(69, 34, 221);
+    font-size: 20px;
+    font-family: 'Chilanka', cursive;
+}
