@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0"> <!--está tag ajuda a deixar o site responsivo-->
+    <link rel="stylesheet" type="text/css" href="assets/css/projeto4.css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function() {
+                    if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    }
+                    else
+                    {
+                        document.querySelector(".menu nav ul").style.display = 'flex';
+                    }
+            });
+        };
+    </script>
+    <title>Medcenter</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="/assets/images/logo.png" alt="simbolo da medcenter"></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="">home</a></li>
+                        <!--faz com que o menu que estiver ativo fique com uma marcação diferente-->
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                        <li><a href="">home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <h2>Medcenter is a responsive template perfect for all screen sizes</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Emergency Case</div>
+                    <div class="banner_desc">
+                        If you need a doctor urgently outside of
+                        medicenter opening hours, call emergency
+                        appointment number for emergency service.
+                    </div>
+                    <a href="">Read More</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Doctor Timetable</div>
+                    <div class="banner_desc">
+                        Here at medicenter we have indvidual doctor's
+                        lists. click read more below to see services
+                        and current timetable for our doctors.</div>
+                    <a href="">Read More</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Opening Hours</div>
+                    <div class="banner_content">
+                        <div>Monday - Friday</div> 8.00 - 17.00
+                    </div>
+                    <div class="banner_content">
+                        <div>Saturday</div> 9.30 - 17.30
+                    </div>
+                    <div class="banner_content">
+                        <div>Sunday</div> 9.00 - 15.00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="general">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest News</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="/assets/images/dr.jpg" alt="doutor">
+                                </div>
+                                <div class="news_title">
+                                    Pediatric Care
+                                </div>
+                                <div class="news_resume">
+                                    is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset
+                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                    software
+                                    like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="/assets/images/consulta.png" alt="doutor">
+                                </div>
+                                <div class="news_title">
+                                    Pediatric Care
+                                </div>
+                                <div class="news_resume">
+                                    is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset
+                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                    software
+                                    like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="/assets/images/consulta.png" alt="doutor">
+                                </div>
+                                <div class="news_title">
+                                    Pediatric Care
+                                </div>
+                                <div class="news_resume">
+                                    is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset
+                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                    software
+                                    like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="/assets/images/dr.jpg" alt="doutor">
+                                </div>
+                                <div class="news_title">
+                                    Pediatric Care
+                                </div>
+                                <div class="news_resume">
+                                    is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset
+                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                    software
+                                    like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Deparments</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="container contentx1">
+                            <div class="intern_content"></div>
+                            <div class="intern_content"></div>
+                            <div class="intern_content"></div>
+                            <div class="intern_content"></div>
+                            <div class="intern_content"></div>
+                            <div class="intern_content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make An Appointment</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div>
+                            <!--<div class="widget_content"> = caso queira da pra aumentar o tamanho da caixa-->
+                            <div class="widget_body_text">
+                                is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been
+                            </div>
+                            <div class="widget_body_intern-contents">
+                                <div class="contact flex">
+                                    <div class="bg-color flex"><img src="assets/images/phone-icon.png"
+                                            alt="imagem de um telefone"></div>
+                                    <div class="aligment">by phone: <strong>1-800-643-4300</strong></div>
+                                    <div class="undescor_bar"></div>
+                                </div>
+                                <div class="contact flex">
+                                    <div class="bg-color flex"><img src="assets/images/e-mail-icon.png"
+                                            alt="imagem de um e-mail"></div>
+                                    <div class="aligment">by e-mail: <a href="#">medicenter@mail.com</a></div>
+                                </div>
+                                <div class="contact flex">
+                                    <div class="bg-color flex"><img src="assets/images/calendar-icon.png"
+                                            alt="imagem de um telefone"></div>
+                                    <div class="aligment">
+                                        <div>or <u>fill </u><a href="#">in the form</a> on our contact page</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <a href="#">
+                        <div>Health Insurance</div><br>
+                        <div>here in medcenter we have indvidual →</div>
+                    </a>
+                </div>
+                <div class="fm_2">
+                    <a href="#">
+                        <div>Medical Records</div><br>
+                        <div>here in medcenter we have indvidual →</div>
+                    </a>
+                </div>
+                <div class="fm_3">
+                    <a href="#">
+                        <div>Online Bill Pay</div><br>
+                        <div>here in medcenter we have indvidual →</div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_area-item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text2">Medicenter Clinc</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body-down">
+                            <div class="widget_body_texttt">
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.
+                                It has survived
+                            </div>
+                            <div class="flex">
+                                <div class="space">Medcenter Clinc</div>
+                                <div class="space">
+                                    <div>33 farlane Street</div>
+                                    <div class="margin-right">+123 655 655</div>
+                                </div>
+                                <div class="space">
+                                    <div>keilor east </div>
+                                    <div class="margin-right">+123 755 755</div>
+                                </div>
+                                <div class="space">
+                                    <div>VIC 3033, Australia</div>
+                                    <div class="color_white2">medicenter@mail.com</div>
+                                </div>
+                            </div>
+                            <div class="widget_body_icons">
+                                <div class="icons_formatation"><img src="assets/images/facebook.png"
+                                        alt="icone do facebook"></div>
+                                <div class="icons_formatation"><img src="assets/images/twitter.png"
+                                        alt="icone do twiter"></div>
+                                <div class="icons_formatation"><img src="assets/images/calendar-icon.png"
+                                        alt="calendário"></div>
+                                <div class="icons_formatation"><img src="assets/images/e-mail-icon.png"
+                                        alt="icone do e-mail"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_area-item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text2">Latest Posts</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body_list">
+                            <div class="widget_body_content">→ is simply dummy text of the printing and typesetting
+                                industry, text of the printing</div>
+                            <div class="widget_body_content-time">6 years ago</div>
+                            <div class="widget_body_content">→ is simply dummy text of the printing and typesetting
+                            </div>
+                            <div class="widget_body_content-time">6 years ago</div>
+                            <div class="widget_body_content">→ is simply dummy text of the printing and typesetting
+                                industry, text of the printing</div>
+                            <div class="widget_body_content-time">6 years ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_area-item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text2">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="position">
+                                <div class="rr">→</div>
+                                <p class="widget_body_content2"><span class="color_white2"></span> we've released new
+                                    new version (v1.2) of our #CleanMate
+                                    #Cleaning Company #Maid #Gardening #WordPress
+                                    Theme. Please che... <span class="color_white2">t.co/tYVkhmpb30</span>
+                                    <!--t.co/tYVkhmpb30-->
+                                </p>
+                            </div>
+                            <div class="widget_body_content-time2">4 days ago</div>
+                            <div class="position">
+                                <div class="rr">→</div>
+                                <p class="widget_body_content2"> we've released new new version (v5.1) of our #Timetable
+                                    #Responsive #Schedule #WP Plugin. Please check at
+                                    #CodeCanyon <span class="color_white2">t.co/wUTmgd2atO</span>
+                                    <!--t.co/wUTmgd2atO-->
+                                </p>
+                            </div>
+                            <div class="widget_body_content-time2">6 days ago</div>
+                            <div class="position">
+                                <div class="rr">→</div>
+                                <p class="widget_body_content2"> we've released new new version (v5.0) of our #Timetable
+                                    #Responsive #Schedule #WP Plugin with #booking
+                                    and #pdf #export... <span class="color_white2">t.co/FwvKmJcDoC</span>
+                                    <!-- t.co/FwvKmJcDoC-->
+                                </p>
+                            </div>
+                            <div class="widget_body_content-time2">7 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                <div>© Copyright -</div>
+                <div class="color_white"> Medicenter Template </div>
+                <div>by</div>
+                <div class="color_white">QuanticaLabs</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

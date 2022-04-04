@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    justify-content: space-between;/*cola o 1º e o ultimo iten nos começos e finais do flex (cantos da tela)*/
+    flex-direction: row;
+    align-items: center;
+    background-color: #DDDDDD;
+    height: 500px;
+}
+.container2 {
+    display: flex;
+    justify-content: space-around; /*todo o espaçamento entre os itens é igual*/
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #DDDDDD;
+    height: 500px;
+}
+.container6 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: #DDDDDD;
+    height: 500px;
+}
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #DDDDDD;
+    height: 500px;
+}
+.container4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DDDDDD;
+    height: 500px;
+}
+.container5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: #DDDDDD;
+    height: 500px;
+}
+.container div {
+    /*flex: 1;*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.container2 div {
+    /*flex: 1;*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.container3 div {
+    /*flex: 1;*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.container4 div {
+    /*flex: 1;*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.container5 div {
+    /*flex: 1;*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.container6 div {
+    /*flex: 1;*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+/*o align-itens alinha os objetos na direção oposta da qual foram orientados (colunm = alinhados em linha
+(row = alinhados em coluna)
+ja o justfy-itens alinha os itens na direcção que foram criados (colunm = alinhados em coluna e row = alinhados em linha
+
+o align geralmente é usado para orientar colunas(orientação vertical)
+o justfy geralmente é usado para orientar linhas(orientação horizontal)*/
