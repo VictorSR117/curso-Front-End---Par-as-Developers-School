@@ -1,0 +1,18 @@
+body {
+    background-image: url('/assets/img/aula 15/Lamborguini\ Veneno.jpg');
+    background-size: cover;
+    background-position: center;
+}
+div {
+    background-color: rgba(11, 155, 238, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/*div {
+    background-color: rgba(11, 155, 238, 0.4);
+    width: 300px;
+    height: 300px;
+}*/

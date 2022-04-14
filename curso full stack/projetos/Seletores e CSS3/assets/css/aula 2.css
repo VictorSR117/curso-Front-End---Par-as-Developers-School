@@ -1,0 +1,24 @@
+* {
+    color: black;
+    padding: 5px;
+}
+label {
+    display: block;
+    margin-top: 20px;
+}
+input {
+    border-radius: 5px;
+    background-color: rgb(236, 234, 234);
+}
+select {
+    border-radius: 5px;
+    background-color: rgb(236, 234, 234);
+}
+#desc {
+    resize: none;
+    padding: 0;
+}
+button {
+    border-radius: 5px;
+    color: rgb(95, 93, 93);
+}

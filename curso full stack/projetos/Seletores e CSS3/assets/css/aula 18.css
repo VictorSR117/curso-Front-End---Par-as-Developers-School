@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 10px;
+    border: 10px solid #00ff00;
+    /*por padrão mesmo que não usassemos o box-sizing, por padrão o conteudo vem no formato de content box*/
+    box-sizing: content-box; /*modo padrão, o tamanho do elemento aumanta de acordo com o padding e margin*/
+    box-sizing: border-box; /*modo em que independente do tamanho do padding ou border o lemento não aumenta de tamanho*/
+}

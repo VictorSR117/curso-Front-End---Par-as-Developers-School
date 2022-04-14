@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+/*span::before {
+    content: "->";
+    background-color: red;
+    border: 1px solid black;
+}
+span::after {
+    content: "<-";
+    background-color: red;
+    border: 1px solid black;
+}
+span::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid black;
+}
+*/
+div {
+    background-color: rgb(255, 255, 128);
+    padding: 20px;
+}
+div::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}

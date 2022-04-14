@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+.intern-content {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    
+}
+.intern-content .logoGoogle{
+    display: flex;
+    justify-content: flex-start;
+}
+.intern-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.intern-content-search {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+}
+.logoGoogle img {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+.intern-content-search input[type="search"] {
+    margin-left: 20px;
+    width: 400px;
+    border:0;
+}
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0; /*coloca ou tira o efeito de contorno de linha ao clicar em uma caixa de texto*/
+}
+.keyboard img{
+    width: 35px;
+    height: 30px;
+    
+}
+.MagnifyingGlass img{
+    width: 35px;
+    height: 30px;
+    
+}
+.MIC img{
+    width: 20px;
+    height: 30px;
+    
+}
+.tamanho img {
+    width: 30px;
+    height: 30px;
+}
+.tamanho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+}
+.tamanho a:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(145, 143, 143);
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+}
+.perfilImg {
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/img/aula 5/imgPerfil.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 55px;
+    border: 3px solid rgb(255, 255, 255);
+}
+.perfilImg:hover {
+    border: 3px solid rgb(199, 197, 197);
+}
+.accountPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+.options {
+    padding-left: 136px;
+    padding-bottom: 10px;
+}
+.navbuttons {
+    text-decoration: none;
+    color: rgb(117, 116, 116);
+    padding: 0.8em;
+}
+.options a:active, .options a::before{
+    color: #39aae1;
+    border-bottom: 5px solid #39aae1;
+    border-radius: 5px;
+}
+.boderBottom {
+    border-bottom: 1px solid rgb(202, 198, 198);
+}
+.content {
+    margin-top: 20px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.content a {
+    text-decoration: none;
+}
+#tempoReacao {
+    margin-bottom: 20px;
+    color: rgb(117, 116, 116);
+}
+.internLink {
+    color: rgb(10, 107, 23);
+}
+.normal-content-text {
+    color: rgb(80, 79, 79);
+}
+.space {
+    margin-bottom: 30px;
+}

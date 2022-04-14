@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+div:nth-child(2) {
+    background-color: aqua;
+}
+div:nth-last-child(2) {
+    background-color: blueviolet;
+}

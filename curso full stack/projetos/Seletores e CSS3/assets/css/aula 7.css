@@ -1,0 +1,18 @@
+input a {
+    display: block;
+}
+a [href~="https:"] {
+    background-color: brown;
+}
+a [href~="http:"] {
+    background-color: blue;
+}
+a [href*="economia"] {
+    background-color: yellow;
+}
+a [href*="futebol"] {
+    background-color: gray;
+}
+a [href$="html"] {
+    background-color: rebeccapurple;
+}

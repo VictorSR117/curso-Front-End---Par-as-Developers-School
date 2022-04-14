@@ -1,0 +1,30 @@
+input {
+    width: 400px;
+    height: 50px;
+    font-size: 27px;
+    color: #f00;
+}
+/*versão padrão aceita pela maioria dos navegadores*/
+.input::placeholder { /*personaliza o texto do placeholder (versão mais recente e suportada na maioria dos navegadores*/
+    color: #0f0;
+}
+/*versão adaptada para os navegadores que aceitam webkit (edge, webkit, blink)*/
+.input::-webkit-input-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+/*versão adaptada para firefox da versão 4 ao 18*/
+.input:-moz-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+/*versão adaptada para firefox em versões acima da 18*/
+.input::-moz-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+/*versão para IE versão 10 e 11*/
+.input:-ms-input-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+/*versão para MS Edge*/
+.input::-ms-input-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}

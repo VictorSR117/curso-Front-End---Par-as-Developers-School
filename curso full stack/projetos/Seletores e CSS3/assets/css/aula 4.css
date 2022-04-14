@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex {
+    display: flex;
+}
+.padding {
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+}
+.HeaderText {
+    color: black;
+    margin: 2px;
+    text-decoration: none;
+}
+.HeaderText:hover {
+    text-decoration: underline;
+}
+.center {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.tamanho img {
+    width: 18px;
+    height: 18px;
+}
+.tamanho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+    width: 30px;
+    height: 30px;
+}
+.tamanho a:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(145, 143, 143);
+    border-radius: 90px;
+    width: 30px;
+    height: 30px;
+}
+.perfilImg {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/aula 4/imgPerfil.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 55px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-left: 15px;
+}
+.perfilImg:hover {
+    border: 3px solid rgb(199, 197, 197);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+}
+.logo {
+    height: 300px;
+}
+.intern-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    height: 15px;
+    border: 3px solid rgb(199, 197, 197);
+    border-radius: 3000px;
+    padding: 10px;
+}
+.intern-content:hover {
+    box-shadow: 0px 0px 3px 0px; /*coloca ou tira um efeito de sombra nas caixas*/
+}
+input[type="search"] {
+    width: 700px;
+    height: 15px;
+    border: 0;
+}
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0; /*coloca ou tira o efeito de contorno de linha ao clicar em uma caixa de texto*/
+}
+.icons {
+    width: 25px;
+    height: 25px;
+}
+.botoesAuxiliares {
+    display: flex;
+    margin: 20px;   
+    margin-top: 50px;
+}
+.BotoesInternos {
+    display: flex;
+    padding: 10px;
+    
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(230, 230, 230);
+    width: 130px;
+    height: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+.FooterContent1 {
+    width: 1295px;
+    background-color: rgb(230, 230, 230);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 0px;
+    color: rgb(133, 131, 131);
+    border-bottom: 1px solid rgb(133, 131, 131);
+}
+.FooterContent2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1298px;
+    height: 40px; 
+    background-color: rgb(230, 230, 230);
+    padding: 12px 6px;
+    color: rgb(133, 131, 131);
+}
+.FooterContent2 div a{
+    width: 1298px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    color: rgb(133, 131, 131);
+    text-decoration: none;
+}
+.FooterContent2 div a:hover{
+    text-decoration: underline;
+}
+/*
+#divBusca{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+  }
+  
+  #btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+  }
+  
+  #divBusca img{
+    float:left;
+  }*/

@@ -1,0 +1,52 @@
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scale(1.1); /*1 é o 100% tudo que vem depois dele é aumento ou seja, nesse caso aumentou o tamanho em 10%*/
+}
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scale(0.5); /*1 é o 100% tudo que vem depois dele é aumento ou seja, nesse caso diminuiu o tamanho em 50%*/
+}
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scale(2); /*1 é o 100% tudo que vem depois dele é aumento ou seja, nesse caso aumentou o tamanho em 100% (dobrou)*/
+}
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scale(2 , 2);/*1 é o 100% tudo que vem depois dele é aumento e ta com 2 valores sendo um para a horizontal e o outro para a vertical respectivamente ou seja, nesse caso aumentou o tamanho em 100%(dobrou)*/
+}
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scale(2, 0.5);/*1 é o 100% tudo que vem depois dele é aumento e ta com 2 valores sendo um para a horizontal e o outro para a vertical respectivamente ou seja, nesse caso aumentou o tamanho em 100%(dobrou) na horizontal e diminuiu pela metade na vertical(50%)*/
+}
+/*quando coloca 2 valores no scale o 1º é para a horizontal e o 2º para a vertical*/
+/*o scale pode ter outros parametros, esse é o base (padrão)*/
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scaleX(7); /*muda o tamanho no eixo X ou seja na horizontal*/
+}
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scaleY(5);/*muda o tamanho no eixo Y ou seja na vertical*/
+}
+/*quando é um scale X ou Y não faz sentido colocar 2 valores ja que ta referenciando um lado especifico. Então só colocamos um valor.*/

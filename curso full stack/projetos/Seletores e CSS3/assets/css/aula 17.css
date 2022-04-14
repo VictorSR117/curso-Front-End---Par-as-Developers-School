@@ -1,0 +1,29 @@
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: rotate(45deg); /*rotaciona o elemento em uma angulação pré-estabelecida*/
+    transform: rotate(-45deg);
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+    transform: rotateX(-45deg);
+    transform: rotateY(-45deg);
+    transform: skew(20deg);
+    transform: skew(-20deg);
+    transform: skew(-20deg, 40deg);
+    transform: skewX(50deg);
+    transform: skewX(-50deg);
+    transform: skewY(50deg);
+    transform: skewY(-50deg);
+    /*se o numero for positivo ele vai rodar pra frente, pra cima ou no sentido horário*/
+    /*a partir de 90° no X e Y o elemento some, e valores maiores q esse ele volta a aparecer só que invertido*/   
+}
+section {
+    margin: auto;
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(34, 49, 252);
+    transform: rotate3d(2, 1, -1, 60deg);
+}

@@ -1,0 +1,22 @@
+table {
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    background-color: #ccc;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(128, 202, 16);
+}
+/*'even' = impar e 'odd' = par seleciona os elemntos por serem de posições par ou impar
+   se colocar o last ele inverte
+tbody tr:nth-last-child(even) vai pegar pares nesse caso
+tbody tr:nth-last-child(odd) vai pegar impares nesse caso
+tbody tr:nth-child(even) vai pegar os impares 
+tbody tr:nth-child(odd) vai pegar os pares
+
+link de pesquisa: https://www.w3.org/Style/Examples/007/evenodd.pt_BR.html
+*/
