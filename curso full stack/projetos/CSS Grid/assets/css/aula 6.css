@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr) 200px;
+    grid-template-columns: repeat(2, 100px 200px 50px);
+    grid-template-columns: repeat(2, 100px) repeat(3, 200px);
+    grid-template-columns: repeat(4, 1fr); /*considera o gap*/
+    grid-template-columns: repeat(4, auto); /*não considera o gap*/
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.item {
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}

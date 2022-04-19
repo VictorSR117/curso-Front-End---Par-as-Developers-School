@@ -1,0 +1,17 @@
+.container {
+    /*height: 800px;*/
+    background-color: #CCC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+    /*justify-content: center;
+    align-content: center;*/
+}
+.item {
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}

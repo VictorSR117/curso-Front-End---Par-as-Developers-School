@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, 100px);/*define o tamanho minimo e maximo dda linha*/
+    grid-auto-rows: minmax(50px, auto);/*informa que todas as linhas terão o mesmo tamanho independente de quantas sejam*/
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(7, minmax(200px, 1fr));
+    gap: 10px;
+}
+.item {
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
