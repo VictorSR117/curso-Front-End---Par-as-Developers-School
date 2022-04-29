@@ -48,7 +48,8 @@ width:inherit
 }
 com isso a imagem recebe o tamanho da div, isso pode ser usado em diversos casos.
 
-também tem a tag max e min que determinam o tamanho minímo ou máximo de um elemento podendo ser em qualquer direção pra cima e pra baixo ou pros lados, ele recebe prioridade máxima e sempre sera cumprido.
+também tem a tag max e min que determinam o tamanho minímo ou máximo de um elemento podendo ser em qualquer direção pra cima e pra baixo ou pros
+lados, ele recebe prioridade máxima e sempre sera cumprido.
 ex:
 max-width
 min-width
@@ -98,7 +99,8 @@ pra usar é só colocar um . o nome do atributo que vai receber isso : e o atrib
 ex: .link:hover{} ai dentro das chaves colocar o que vai mudar tipo a cor, tamanho de letra tamanho de borda etc.
 lembrando  que esse hover aplica o que tiver dentro das chaves depois de aplicar os aspectos definidaos antes ou os de padrão
 então se você criar uma classe como link tendo 30 pixels de font-size  e uma cor vermelha e aí no hoover você coloca que ele vai ter uma cor verde
-ele vai continuar tendo 30 pixels no tamanho da fonte porque você determinou isso no elemento de link lá atrás, se você não determinou ele só vai deixar o tamanho normal
+ele vai continuar tendo 30 pixels no tamanho da fonte porque você determinou isso no elemento de link lá atrás, se você não determinou
+ele só vai deixar o tamanho normal
 por padrão mas geralmente aplica o que você colocou anteriormente
 Se tiver elemento repetido ele também repete,  ele primeiro aplica tudo o que você define
 como padrão e depois aplica as coisas que você colocou no roover  por exemplo e aí o que é repetido ele mantém
@@ -360,4 +362,682 @@ ex:
 uma div com class normal = div class ="container"
 uma div com 2 class = div class ="container column"
 assim  a outra div vai pegar o conteudo de 2 classes
+
+a tag position: absolute/relative = 'absolute' faz com que o conteudo fique em uma determinada posição
+independente do que aconteca
+'relative' faz com que o conteudo fique em um determinado local e se realoque de acordo com a situação
+
+o left:0 ou outro valor  = faz com que o espaço que tem naquela direção suma
+
+ex: left:0;
+faz com que todo o conteudo fique a esquerda
+
+width:100%; ocupa 100% da tela ou de uma div ou coisa parecida
+
+<script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function() {
+                    if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    }
+                    else
+                    {
+                        document.querySelector(".menu nav ul").style.display = 'flex';
+                    }
+            });
+        };
+    </script>
+
+nesse script js criamos uma função e uma estrutura condicional para ativar e desativar o botão de menu
+na versão mobile do site.
+
+&nbsp; = comando que possibilita a inserção de caracteres especias 
+
+o comando place holder nos permite colocar um texto de descrição no input
+ex: placeholder="Buscar..." colocamos isso dentro do input
+
+box-shadow: 2px 2px 2px 20px; = faz um efeito de sombra na caixa seguindo o seguint padrão
+primeiro o quanto se desloca para a direita, depois para baixo o quanto vai esfumaçar e a expessura
+
+outline: 0; = tira ou cria um efeito de contorno nas caixas de text
+
+devem ser usados com o atributo :focus
+
+no css da pra colocar estilos nas coisas pelos atributos também 
+evitando a necessidade de criar classes e IDs
+ex:
+[required] {
+    background-color: rgb(248, 213, 14);
+}
+todas as tag que tiverem o atributo requered terão esse background
+
+input [required] {
+    background-color: rgb(248, 213, 14);
+}
+somente os inputs que tiverem requered terão essas propriedades
+
+pode ser nome de tag, classe ID etc.
+
+se acontecer de colocar por exemplo
+div [required] {
+    background-color: rgb(248, 213, 14);
+}
+e a div não existir ele não vai mudar a cor, mesmo que o elemento esteja dentro de outra tag
+
+<div>
+   <input required>
+</div>
+
+tem que especificar exatamente o onde esta o parametro pra funcionar
+
+se mais de um elemento tiver required, todos serão atingidos pelas propriedades,
+se tiver especificado somente o especificado recebe os parametros.
+
+se for com o atributa type por exemplo
+
+todos os elementos que tiverem o atributo type recebem as propriedades estabelecidas
+se for o case de querer um tipo de type especifico use da seguinte maneira 
+input[type="text"] {
+ propriedades   
+}
+
+se for com o atributo name tem que ser desse jeito
+
+input[name="usuario"] {
+    background-color: red;
+} 
+
+porque o type e o requered por exemplo são atributos do sistema, coisas que são nativas no CSS e HTML
+ja o name vai receber algo que o desenvolvedor digitar, e isso não esta no registro como o type e o requered por exemplo
+então é preciso que seja colocado entre "" o conteudo do name para que o navegador possa entender
+o que esta sendo escrito e como pegar o parametro.
+
+da pra colocar propriedades também pela origem do link
+
+a [href="URL inteira"] {
+}
+
+ou se você não souber a URL inteira da pra procurar por uma palavra ou conjunto de caracteres
+a [href*="palavra ou conjunto de caracteres"] {
+}
+
+se você quiser pegar um atributo por uma palavra inicial cmo por exemplo https, tem q usar o ~ no lugar do *
+a [href~="https"] {
+}
+pois se colocar só *=https n fuciona pois o elemento não tem somente a palavra https
+
+se acontecer de ter um https e  um http ou palavras parecidas
+uma solução é fazer o seguinte
+
+a [href*="https"] {
+}
+a [href*="http"] {
+}
+
+ou simplesmente colocar :
+
+a [href*="http:"] {
+}
+a [href*="https:"] {
+}
+
+e se for pra selecionar com uma palavra ou caracteres no final é só usar o $
+
+a [href$="html"] {
+}
+
+da pra colocar atrubutos nos elementos sem que eles tenham coisas dentro deles também
+
+<div>texto 1</div>
+<div>texto 2</div>
+<div></div>
+<div>texto 4</div>
+<div>texto 5</div>
+
+div {
+    margin: 20px;
+    height: 30px;
+}
+div:empty {
+    background-color: blue;
+}
+
+isso fara com que mesmo que não tenha nada na div ela apareca.
+
+empty significa algo vazio ou sem nada.
+
+se usar : ta referenciando o elemneto em si, se usar :: ta referenciando o que ta dentro do elemento
+a pra selecionar mum texto a primeira linha ou letra do texto sem ter que usar span
+ex:
+
+da pra selecionar um elemento por ser o 1º ou ultimo
+no acso de divs por exemplo dapra fazer
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+div:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+div:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+first pega a primeira div e last a ultima
+
+os atriburos border-top-left-radius colocam um arredondamento nos cantos das divs
+podem ser usados em qualquer direção.
+
+o comando not tem a função de negar as prorpriedades que vc estabeleceu para os trubutos
+pode ser usado em um contexto geral em que pega o body todo ou não.
+
+ex:
+:not(p) {
+    background-color: aqua;
+}
+
+ele semrpe deve começar com o : pra funcionar, nesse caso ele vai pintar tudo de aqua
+menos o p. Porém ai ele acerta o body todo, e não queremos isso então colocamos o body na frente do p
+
+body :not(p) {
+    background-color: aqua;
+}
+
+desse jeito ele vai colocar aqua em tudo que está dentro do body com escessão do p.
+
+da pra selecionar um elemento qualqer de qualquer ordem usando o comando nth
+
+ex:
+<div>texto 1</div>
+<div>texto 2</div>
+<div>texto 3</div>
+<div>texto 4</div>
+<div>texto 5</div>
+
+div:nth-child(2) {
+    background-color: aqua;
+}
+div:nth-last-child(2) {
+    background-color: blueviolet;
+}
+
+o comando nth-child()
+permite que vc escolha q elemento vc quer selecionar entre outros elementos
+no exemplo foi colocado 2 então ele vai contar do primeiro para o ultimo
+e vai pegar o segundo elemento, no caso foi o texto 2
+
+ele por padrão sempre comeca contando do 1 e de cima pra baixo
+ou da esquerda para a direita, a forma padrão de contagem 
+do menor para o maior tipo de 1 - 5
+ele comeca no 1
+
+se vc quiser fazer ele comecar do maior pro menor
+é só usar o nth-last-child()
+pois com isso ele vai contar de baixo para cima, da direita para a esquerda
+ou do maior para o menor
+nesse caso em especifico ele vai colorir o texto 4,
+pois de baixo para cima ele é o 2 elemento.
+
+os comandos before e after, podem respectivamente no css criar um elemento antes ou depois do que 
+foi feito no html, 
+ex:
+<div>texto 1</div>
+
+span::before {
+    content: "->";
+    background-color: red;
+    border: 1px solid black;
+}
+span::after {
+    content: "<-";
+    background-color: red;
+    border: 1px solid black;
+}
+tanto antes ou depois da pra criar um elemento que não existe no html
+sempre tem que ter o parametro content: "";
+sem ele o comando não funciona, nem q ele esteja vazio mais tem que ter
+o conteudo ainda pode ser formatado, tipo com cor de fundo, de fonte
+borda etc.
+
+se ele tiver vazio e só com tamanho ainda assim não vai funcioanr, pois o display é em linha
+ent width e heith se tornão inuteis.
+seria preciso transformar o display em inline-block para depois usar as caixas
+span::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid black;
+}
+dessa maneira sim mesmo sem conteudo da pra ver a caixa na tela.
+
+da pra por exemplo criar uma div e dentro dela colocar o before e simular uma outra div
+é como uma div dentro da outra só que a de dentro não existe no html
+
+div {
+    background-color: rgb(255, 255, 128);
+    padding: 20px;
+}
+div::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+criamos uma div com fundo amarelo e dentro dela 
+criamos o before que por sua vez criou um elemento de acordo com o que
+pedimos.
+
+usando a proriedade border-color da pra mudar a cor da borda em acda uma de suas direções
+
+border-color: #0000FF transparent transparent transparent;
+
+é como se fossem 4 triangulos cada um de uma cor, nesse caso vai aparecer só um mais se fosse 
+por exemplo
+
+border-color: #0000FF #00FF00 #FF0000 #F0F0F0;
+
+vai ficar 4 triangulos de cores diferentes
+
+o parametro top:
+faz com que o elemento suba na tela,
+sendo todas as direções disponiveis em % px e etc.
+
+o comando fixed faz com que o comando fique fixo em um determindao lugar da tela
+left e outras direções podem colar ou distanciar um elemento das bordas
+
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+
+cola o conteudo inteiro nas bordas da div ou da tela
+
+o comando tranform pode tranformar e modificar um elemento, independente do tamanho dele
+se uma div tem 200px de altura e largura ele pode deixala menor esteticamente
+porem ela não muda de tamanho
+
+div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: scale(2);
+}
+ele pode fazer modificações dos mair variados tipos, 3d 2d etc
+em sua forma padrão ele pode receber até 2 valores sendo q se for 
+1 valor ele muda em todas as direções, se forem 2 ele muda o 1ºvalor na
+vertical e o 2º na horizontal
+sendo esse valor proximo de 1
+se colocar 1 não muda por que é o tamanho normal,
+se colocar 2 vai dobrar de tamanho
+se colocar 3 vai triplica o tamanho
+se colocar 0.5 vai diminuir pela metade
+e assim por diante
+
+quando é um scale X ou Y não faz sentido colocar 2 valores ja que
+ta referenciando um lado especifico. Então só colocamos um valor.
+
+quando coloca 2 valores no scale o 1º é para a horizontal e o 2º para a vertical
+o scale pode ter outros parametros, esse é o base (padrão)
+
+o comando rotate serve para rotacionar os elementos na tela, podendo ser
+no sentido horário ou anti-horário, pra funcionar tem que einformar que é deg de degress em ingles graus
+da matematica, vai rada seguindo uma angulação que vc estabelece
+transform: rotate(45deg);
+pode ser ussado em div ou oputras caixas
+em sua forma base ele aceita apenas um valor sendo ele positivo ou negativo
+se for positivo ele rotaciona no sentido horário, se for negativo ele rotaciona 
+no sentido ati-horário
+desse jeito ele roda o elemento meio q na lateral,
+porém tem também como colocar rotateX ou rotateY que ai roda tbm só que meio q de frente
+e de lado, tipo é melhor ver pra entender kkkkk
+
+mais tipo se vc coloca rotateX(40deg);
+ele vai roda em forma de linha.
+
+se colocar rotateY(40deg); ele vai roda em forma de coluna.
+
+a lógica de deg é a msm pra todos os casos, um numero só e posiivo pra horário
+negativo para anti-horário,
+
+no caso do Y ele só vai tipo pra frente ou pra tras positivo pra frente e negativo pra tras
+no caso do X ele vai pra cima e pra baixo positivo pra cima e negativo pra baixo
+
+(esses comandos são todos usados no transform)
+
+também tem o comando skew que tem a função de 'deformar' o elemento ele meio que 
+inclina o elemento na vertical ou horizontal, ele também trabalha com deg no msm 
+esquema de positivo pra frente ou horário e nogativo para tras ou anti-horário
+ 
+mais ele pode receber até 2 valores, tem sua forma de X e y tbm
+mais em forma base ele aceita até 2 valores a logoca dele é parecida
+com a do scale.
+
+o box-sizing, determina mais ou menos como vai ser o tamanho do elemento, se ele for content-box
+quer dizer que vai aumentar de acoirdo com o padding e border que coloccarmos,
+ja o border-box indepente do tamanho da borda ou padding o elemento se mantem no mesmo tamanho.
+
+o comando placeholder serve para deixar um texto que aparece antes do usuaruio digitar alguma coisa
+muito usado em inputs como por exemplo "digite seu usuario"
+
+.input::placeholder { /*personaliza o texto do placeholder*/
+    color: #0f0;
+}
+é possivel modificar e personalizar o placeholder de acordo com o que vc precisar
+esse comando citado acima é o mais recente e é suportado na maioria dos navegadores
+
+se por acaso não funcionar em um navegador pode ser a versão,
+mais ai pode é só adaptar
+
+.input::-webkit-input-placeholder { /*personaliza o texto do placeholder*/
+    color: #0f0;
+}
+/*versão adaptada para firefox da versão 4 ao 18*/
+.input:-moz-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+/*versão adaptada para firefox em versões acima da 18*/
+.input::-moz-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+/*versão para IE versão 10 e 11*/
+.input:-ms-input-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+/*versão para MS Edge*/
+.input::-ms-input-placeholder { /*personaliza o texto do placeholder (versão para adaptação caso o navegador não suporte)*/
+    color: #0f0;
+}
+
+o CSS grid permite a criação de interfaces dos mais variados tipos
+de interface.
+
+se você quer impor regras gerais é no container, e se for individual é no item
+
+a propriedade grid-gap serve para dar um certo espaçamento entre os intems
+aumentando uma linha imaginaria entre eles
+
+em sua sintaxe é escrita grid-gap ou grid-colum/row-gap
+porém apesar dessa forma funcionar ela está desatualizada, e o correto seria usar somente gap
+gap: ou colum/row-gap mais até que os navegadores se atualizem e venham a aderir essa prática de vez
+pode usar o prefixo grid sem prob
+
+jeito obsoleto:
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+grid-gap: 10px, 15px;
+grid-gap: 10px;
+
+se informar uma direção como linha ou coluna é só colocar um valor
+se quiser usar uma linha só da pra colocar até 2 valores, sendo o 1º pra linha
+e o 2º pra coluna,
+se o valor for o mesmo para colunas e linhas pode colocar ele sozinho
+
+jeito atual:
+column-gap: 10px;
+row-gap: 10px;
+gap: 10px, 15px;
+gap: 10px;
+
+ambas as formas fazem a exata mesma coisa, só que a atual deve começar a ser 
+implementada.
+
+os comandos 
+grid-template-columns: ;
+grid-template-rows: ;
+
+determinam respectivamente o tamanho das colunas e linhas dos elementos
+podem receber valores em px, % entre outros e vc coloca a quantidades de valores de acordo com
+a quantidade de itens do seu projeto.
+
+<div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+</div>
+
+.container {
+    display: grid;
+    grid-template-columns: 100px, 100px, 100px;
+    gap: 10px;
+}
+
+no caso citado tem 10 elementos, ou seja da pra colocar até 10 valores
+cada um para um elemento sendo sempre em oredem de esquerda para a direita
+
+não se tem tanto controle sobre o template-rows porque não se sabe exatamanete quantas linhas 
+você terá.
+mais ela tema  mesma lógica do colunas, só muda a orientação mesmo
+
+a unidade de medida fr existe somente no CSS GRID, ela quer dizer uma fração do espaço 
+reservado,
+
+ele pega o tamanho total do elemento sendo ele definido ou dado pelo navegador
+e com base nesse espaçe ele divide o espaço em partes de acordo com o que você pede
+grid-template-columns:  2fr 1fr;
+divide o espaço em colunas e do total da uma parte para a segunda coluina
+e multiplica esse valor por 2 e atribui para a 1º colune nesse caso.
+se fosse 1fr 1fr 1fr ele dividiria o espaço de maneira igual para os 3
+se fosse 1fr 2fr 3fr um espaço para o 1º elemento, o dobro desse valor 
+para o 2º e o triplo para o 3º respectivamente.
+
+o comando repeat(); pode receber alguns valores, ele tem a função de repetir
+um determinado comando.
+
+ele pode repetir quantos comandos vc quiser
+grid-template-columns: repeat(2, 100px 200px);
+nesse caso ele repetiu o conteudo e criou 4 colunas, mais poderiamos colocar 3 valores, 4 quantos quisermos
+
+se acontecer de você querer erpetir um comando mais não sabe quantas vezes ele vai se repetir
+da pra usar o auto-fill, que é um comando que faz com que o conteudo se repita
+até que não sobre mais epaço no elemento ou na tela
+ grid-template-columns: repeat(auto-fill, 300px);
+assim as instruções vão se repetir o quanto for necessário.
+
+a propriedade grid-auto-row: define que o tamanho das linhas independente do numero de linhas que tiver
+ex: grid-auto-rows: 200px;
+faz com que todas as linhsa tenham 200px, independente de quantas sejam
+
+mesma lógica para o grid-auto-colums:
+
+a propriedade minmax seve para definir o tamanho minimo e maximo de um elemento
+grid-auto-rows: minmax(50px, 100px);
+defini o tamanho minimo em 50px e o maximo em 100px
+
+grid-auto-rows: minmax(50px, auto);
+
+tamanho maximo de forma automatica
+
+grid-template-columns: repeat(7, minmax(200px, 1fr));
+
+da pra usar ele também na definição de tamanho das linhas e colunas
+
+no display grid, da pra colocar os mesmos atributos que o flex-box,
+só não precisa colocar o nome antes
+ex: 
+
+flex-end = end
+flex-start = start
+
+só coloca o nome direto sem precisar colocar o flex ou mesmo grid.
+
+o stretch = aumenta o tamanho da caixa para que os seus elentos caibam dentro de si
+esse aumento é feito automaticamente e é só o suficiente para caber os
+itens.
+
+pode usar também o align-itens, justfy-content e etc.
+
+as colunas tem linhas imaginarias. Elas comecam geralmente no inicio do elemento e se encerrram
+um pouco antes da próxima coluna ou do fim do elemento,
+
+com o :
+grid-column-start: 1;
+grid-column-end: 2;
+
+é possivel determinar onde a coluna vai começar e acabar, determinando assim um tamanho sem 
+dizer px ou %, pois ela se inicia diretamente na linha imaginaria, que são 
+os espaços que existem entre as colunas.
+
+a mesma lógica serve para as linhas.
+
+grid-row-start: 1;
+grid-row-end: 2;
+
+só que quando a gente mexe com a coluna é possivel que acabe tendo uma mudança na posição do elemento
+toda vez que muda a posição da linha tem que configurar a coluna também, então tipo assim
+ 
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+
+quando mexer na linha é só coloca na coluna onde começa a e acaba a linha imaginaria
+nesse caso a linha imagianria começa no 2 e termina no 3, ai com essas posições na coluna
+o browser entende que o elemnto n tem q mudar de lugar, e dps vc mexe na linha
+ai ele entende que vc quer mudar o tamanho.
+
+tipo é bem maleavel na real vc pode dizer que a linha imaginaria começa no 3
+e que acaba no 5 vc decide, isso vc escolhe de acordo com o tamanho que vc quer q o elemento pegue
+lembrando que sempre tem linhas imaginarias nas linhas e colunas
+ai vc conta sempre de onde começa o elemento msm, e vai definindo
+o tamanho em coluna e em linha
+
+o fato é, sempre que for mexer na linha mexer na coluna, se n desconfigura
+o ideal seria sempre q for mexer, mexer nos 2 tanto linha como coluna
+
+tem uma fomra mais curta de fazer o mesmo procedimento de definir o tamanho 
+das linhas e colunas ao inves de digitar o lugar onde as linhas e colunas
+comecam, é dizer os valores direto e separados por uma /
+
+grid-column: 1 / 4;
+
+começa na 1º linha linha imaginaria e termina na 4º
+
+ou seja da pra trocar
+isso: 
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+
+por isso:
+grid-column: 2 / 3;
+grid-row: 2 / 4;
+
+se você não quiser usar as linhas imaginarias como referencia, da pra usar o span
+grid-column: 1 / span 2;
+grid-row: 2 / 4;
+
+ele se baseia na posição dos elementos ao inves de linhas imaginarias
+então se tem 3 elementos em uma tela, nesse caso o span diria para acabar em 2
+o começo ta normal por linhas imaginarias, mais o final como ta com span
+vai terminar onde acaba o segundo. Independente da linha imaginaria.
+
+quando vc usa o span é como se o valor 1 ja fosse span, tipo assim se 
+vc usar o 1 / span 3 ele considera a linha imaginaria como se fosse parte o 1º elemento
+então ele conta por elementos ao inves de linhas imaginarias ai ele vai de onde vc especifica
+desde o inicio até o final. usando o span vai basicamente reduzir um numero só do final de elementos
+tipo se sem o span vai ter 3 linahs imaginarias, com o span vc só tem 2.
+
+o grid-area serve para resumir todos os comandos de posicionamento de grid
+que vimos até agora, ele engloba 4 valores que correspondem a todos os valores
+que precisamos
+
+grid-row-start: ;
+grid-column-start: ;
+grid-row-end: ;
+grid-column-end: ;
+
+nessa respectiva ordem.
+
+com o grid template da pra dar um nome para os elementos e formatações
+que criamos e depois podemos posicionar eles onde quisermos
+
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+}
+.item5 {
+    grid-area: item5;
+}
+assim damos os nomes (os nomes são como variaveis, não pode ter acento, espaço em branco etc.)
+o grid-area da o nome
+
+grid-template-areas: 
+        "item1 item2 null"
+        "item3 item4 item5"
+    ;
+com o grid-template-areas (no plural msm)
+nó decidimos onde posicionar os elementos que criamos subentendese que
+se colocarmos "item1 item2" 2 items na mesma linha ele terá 2 linhas 
+e se "item1 item2"
+     "item1 item2" ele entende que terá 2 linhas e 2 colunas
+pois tem 2 elementos se colocassemos 3 ele entenderia que tem 3 linhas ou colunas
+dependnedo de onde colocarmos e etc.
+se quiser mesclar tipo juntar o item2 pegando 2 colunas na mesma linha
+é só repetir o mesmo item 2 vezes "item1 item2 item2" isso fara com que ele
+ocupe 2 colunas na mesma linha, e se quiser colocar o item e deixar um 
+espaço da linha em branco é só colocar null ou simplesmente um . "item1 item2 null"
+que ele entende que aquele espaço será vazio.
+
+detalhe, não da pra deixar o mesmo elemento pegando linhas diferentes, tipo 
+o elemento 1 não pode aparecer em outra linha, ele pode aparecer 2 vezes na mesma
+linha, mais não no mesmo template. 
+
+é como brncar com uma gigante tabela
+
+o comando overflow: hidden; pode esconder a barra de rolagem das páginas
+fazendo com que somente o conteudo que aparece na tela possa ser visto
+
+as unidades de medida vh e vw são viewport width e heigth, elas são 
+em sua essencia o valor da tela do usuario /100, exemplo
+supondo que a tela do usuario tenha uma tamanho de 900px altura e 750 de largura
+
+1vh = 900px/100 = 9px
+1vw = 750px/100 = 7.5px
+
+quando usar margin o elemento não vai se distanciar na direção oposta de onde vc ta declarando
+ele só vai aumentar a distancia de onde vc declaro
+ex: 
+margin-top: -50px; != margin-botomn:50px;
+a margin de baixo não vai empurrar o elemnto pra cima, só vai dar uma distancia
+dele para o restante de conteudo para baixo. Pra mover ele pra cima tem que
+diminuir ainda mais o margin top.
+
+a tag cursor: pointer; habilita em uma caixa a fução de mostrar o simbolo
+de mãozinha quando o usuario passar o mouse por ela.
+
+com a tag a link no modo favicon da pra mudar o icone que fica no titulo da pagina,
+pode ser qualquer tipo de imagen
+<link rel="shortcut icon" href="assets/images/kratos.ico" type="image/x-icon">
+<link rel="shortcut icon" href="assets/images/estrela.png" type="image/x-icon">
+
+a proriedade flex-wrap: wrap;permite que o elemento quebre de linha caso não haja espaço
+suficiente para todos os elementos na mesma linha, ele tem premissão para fazer isso caso precise
+
+o comando width: inherit; faz com que o atributo herde os parametros do elemento anterior
+nesse caso vai erdar um tamanho especificado num elemento anterior
 
