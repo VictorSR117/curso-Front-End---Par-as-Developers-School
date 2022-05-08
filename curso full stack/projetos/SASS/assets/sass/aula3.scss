@@ -1,0 +1,17 @@
+$cor-fundo: red; /*declaração de variavel: $nomde-daVarivavel*/
+$cor-texto: blue;
+$borda-padrao: 2px;
+body {
+    background-color: $cor-fundo;
+}
+.quadrado {
+    color: $cor-texto;
+    width: 200px;
+    height: 200px;
+    border: $borda-padrao solid black;
+}
+.retangulo {
+    width: 300px;
+    height: 200px;
+    border: $borda-padrao solid black;
+}

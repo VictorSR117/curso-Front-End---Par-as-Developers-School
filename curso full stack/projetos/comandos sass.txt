@@ -1,0 +1,21 @@
+comando														ação
+D:\Users\victo\OneDrive - Fatec Centro Paula Souza\estagio\parças - Raccon\curso full stack\projetos\SASS	entra na pasta do projeto
+--style compressed												usa o formato comprimido
+--style compact													usa o formatop compacto
+--no-source-map													tira o arquivo de mapa
+npm install -g sass												instala o sass
+--watch														observa um arquivo e realiza alterações no css de acordo com o que for colocado no sass
+sass --watch assets/sass:assets/css										observa uma pasta inteira e modifica todos os arquivos css de acordo com o sass (os nomes de arquivo sass e css devem ser iguais)
+
+
+alguns exemplos:
+D:\Users\victo\OneDrive - Fatec Centro Paula Souza\estagio\parças - Raccon\curso full stack\projetos\SASS>sass assets\sass\base.scss assets\css\aula.css --no-source-map --watch
+
+D:\Users\victo\OneDrive - Fatec Centro Paula Souza\estagio\parças - Raccon\curso full stack\projetos\SASS>sass --watch assets/sass:assets/css --no-source-map --style compressed
+
+D:\Users\victo\OneDrive - Fatec Centro Paula Souza\estagio\parças - Raccon\curso full stack\projetos\SASS>sass assets\sass\base.scss assets\css\style.css --no-source-map
+
+Users\victo\OneDrive - Fatec Centro Paula Souza\estagio\parças - Raccon\curso full stack\projetos\SASS
+
+sass --watch assets/sass:assets/css --no-source-map --style expanded compressed
+

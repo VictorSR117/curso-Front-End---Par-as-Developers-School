@@ -1,0 +1,43 @@
+nav {
+    background-color: #eee;
+    height: 100px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+    }
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            background-color: #999;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+%fundamento-msg {
+    padding: 10px;
+    font-size: 12px;
+    border: 2px solid #ccc;
+    margin: auto;
+    max-width: 500px;
+    margin-top: 10px;
+}
+.msg-info {
+    @extend %fundamento-msg;
+    border-color: aqua;
+    color: #00f;
+}
+.msg-aviso {
+    @extend %fundamento-msg;
+    border-color: aqua;
+    color: #f00;
+}
+.msg-sucesso {
+    @extend %fundamento-msg;
+    border-color: aqua;
+    color: #0f0;
+}
