@@ -1,0 +1,8 @@
+.texto {
+    width: 500px;
+    height: 500px;
+    overflow: auto; /*se 200px n for o suficiente ele põe scroll*/
+    background-color: #ccc;
+    border: 2px solid #f00;
+    padding: 20px;
+}

@@ -1,0 +1,17 @@
+#exemplo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #333;
+}
+.verde {
+    background-color: greenyellow;
+}
+.vermelho {
+    background-color: red;
+    color: rgb(81, 247, 247);
+}
+.azul {
+    background-color: blue;
+    color: white;
+}

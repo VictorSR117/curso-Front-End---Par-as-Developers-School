@@ -1,0 +1,19 @@
+.texto {
+    width: 200px;
+    height: 900px;
+    overflow: auto; /*se 200px n for o suficiente ele põe scroll*/
+    background-color: #ccc;
+    border: 2px solid #f00;
+    padding: 20px;
+}
+.scrollbutton {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f00;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999; /*faz com que o elemento fice acima sobre todo o conteudo (igual o mover pra frente do word)*/
+    cursor: pointer;
+}
