@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo" onmouseover="console.log('passou o mouse')">bem vindo</h1>
+    <h1 id="titulo" onmouseout="console.log('tirou o mouse')">bem vindo</h1>
+    <input type="text" name="usuario" id="campo" value="Nome do usuario">
+    <button onclick="clicou()">Clique aqui</button>
+    <button onclick="document.getElementById('titulo').innerHTML = 'titulo2'">Clique aqui</button>
+    <button onclick="this.innerHTML = 'Clicou'">Clique aqui</button>
+    <h1 id="titulo" onmouseover="console.log('passou o mouse')" onclick="console.log('Clicou')" onmouseout="console.log('tirou o mouse')">bem vindo</h1>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
